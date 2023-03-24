@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let form= document.querySelector('#create-task-form')
   form.addEventListener('submit', (e)=> {
     e.preventDefault()
-    displayTodo(e.target.new_task_description.value)
+    displayTodo(form.querySelector("#new-task-description").value)
     form.reset()
   })
 
